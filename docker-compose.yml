@@ -1,10 +1,9 @@
 itop:
   build: .
-  #image: itop_web_init  
   links:
     - db
   ports:
     - 80:80
 
 db:
-  image: itop_db_init
+  image: fgiroult/itop_db_init
